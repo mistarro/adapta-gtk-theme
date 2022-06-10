@@ -268,7 +268,7 @@ assistant {
 
 // button box is always shown with flat-buttons
 buttonbox {
-  &, &.dialog-action-area {
+  &, &.dialog-action-area, %buttonbox-dialog-action-area {
     &:not(.linked) button {
       @extend %button_flat_normal;
       background-color: transparent;
@@ -718,7 +718,7 @@ button {
 
   separator,
   .separator { // remove vertical separator
-    @extend separator.wide;
+    @extend .wide;
     min-height: 0;
     min-width: 0;
     border-color: transparent;
@@ -1159,6 +1159,7 @@ toolpalette {
 //  * Links *
 //  *********/
 
+%link,
 *:link {
   @at-root %normal_link,
   & {
@@ -1190,7 +1191,7 @@ link {
 }
 
 button.flat.link { // specificity bump with .flat class
-  @extend *:link;
+  @extend %link;
 
   > label {
     color: inherit;
@@ -5385,7 +5386,7 @@ stacksidebar {
   // remove unwanted separator
   separator,
   .separator {
-    @extend separator.wide;
+    @extend .wide;
     min-height: 0;
     border-color: transparent;
     background-color: transparent;
