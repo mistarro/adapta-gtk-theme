@@ -16,6 +16,6 @@ button_shade
 button_unshade_prelight
 button_unshade_pressed
 button_unshade
-max_button_unmaximize_prelight
-max_button_unmaximize_pressed
-max_button_unmaximize
+button_unmaximize_prelight
+button_unmaximize_pressed
+button_unmaximize

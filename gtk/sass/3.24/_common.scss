@@ -545,8 +545,8 @@ button {
       border-radius: 2px;
       -gtk-outline-radius: 2px;
       &.image-button {
-        border-radius: 100px;
-        -gtk-outline-radius: 100px;
+        border-radius: 0px;
+        -gtk-outline-radius: 0px;
       }
     }
   }
@@ -826,8 +826,8 @@ button {
       min-width: $icon_size;
       min-height: $icon_size;
       padding: rem(6.7px);
-      border-radius: 100px;
-      -gtk-outline-radius: 100px;
+      border-radius: 0px;
+      -gtk-outline-radius: 0px;
     }
 
     &.text-button,
@@ -885,8 +885,8 @@ button {
       min-width: $icon_size;
       min-height: $icon_size;
       padding: rem(6.7px);
-      border-radius: 100px;
-      -gtk-outline-radius: 100px;
+      border-radius: 0px;
+      -gtk-outline-radius: 0px;
 
       image { padding: 0; } // reset padding
     }
@@ -895,8 +895,8 @@ button {
       min-width: $icon_size;
       min-height: $icon_size;
       padding: rem(6.7px);
-      border-radius: 100px;
-      -gtk-outline-radius: 100px;
+      border-radius: 0px;
+      -gtk-outline-radius: 0px;
 
       image { padding: 0; }
     }
@@ -1032,8 +1032,8 @@ button {
 
 %image_button {
   padding: rem(($widget_size - $icon_size) / 2);
-  border-radius: 100px;
-  -gtk-outline-radius: 100px;
+  border-radius: 0px;
+  -gtk-outline-radius: 0px;
 }
 
 %needs_attention {
@@ -1240,40 +1240,6 @@ button.flat.link { // specificity bump with .flat class
 //  * GtkSpinButton *
 //  *****************/
 
-@keyframes spin_hover {
-  from {
-    background-image: -gtk-gradient(radial,
-                                    center center, 0,
-                                    center center, 0.01,
-                                    to(gtkalpha(currentColor, 0)),
-                                    to(transparent));
-  }
-  to {
-    background-image: -gtk-gradient(radial,
-                                    center center, 0,
-                                    center center, 0.5,
-                                    to($track_color),
-                                    to(transparent));
-  }
-}
-
-@keyframes spin_active {
-  from {
-    background-image: -gtk-gradient(radial,
-                                    center center, 0,
-                                    center center, 0.5,
-                                    to(gtkalpha(currentColor, 0.25)),
-                                    to(transparent));
-  }
-  to {
-    background-image: -gtk-gradient(radial,
-                                    center center, 0,
-                                    center center, 0.01,
-                                    to(gtkalpha(currentColor, 0)),
-                                    to(transparent));
-  }
-}
-
 spinbutton {
   &:not(.vertical),
   &.vertical {
@@ -1315,8 +1281,8 @@ spinbutton {
       min-width: rem($icon_size);
       min-height: rem($icon_size);
       padding: rem(($widget_size - 4px - 13.3px) / 2);
-      border-radius: 100px;
-      -gtk-outline-radius: 100px;
+      border-radius: 0px;
+      -gtk-outline-radius: 0px;
       background: none;
       background-size: contain;
       background-color: transparent;
@@ -1327,46 +1293,16 @@ spinbutton {
                            background-image,
                            box-shadow;
 
-      &.down { // '-' button
-        &:hover {
-          @extend %button_flat_hover;
-          background: none;
-          color: $error_color;
-          animation: spin_hover 0.2s $slope_medium forwards;
-        }
-        &:active {
-          @extend %button_flat_active;
-          background: none;
-          color: $error_color;
-          animation: spin_active 0.2s $slope_quick forwards;
-          transition-duration: 0.2s;
-        }
-        &:disabled {
-          @extend %button_flat_disabled;
-          background: none;
-          color: $insensitive_fg_color;
-        }
+      &:hover {
+        @extend %button_flat_hover;
       }
-
-      &.up { // '+' button
-        &:hover {
-          @extend %button_flat_hover;
-          background: none;
-          color: $success_color;
-          animation: spin_hover 0.2s $slope_medium forwards;
-        }
-        &:active {
-          @extend %button_flat_active;
-          background: none;
-          color: $success_color;
-          animation: spin_active 0.2s $slope_quick forwards;
-          transition-duration: 0.2s;
-        }
-        &:disabled {
-          @extend %button_flat_disabled;
-          background: none;
-          color: $insensitive_fg_color;
-        }
+      &:active {
+        @extend %button_flat_active;
+      }
+      &:disabled {
+        @extend %button_flat_disabled;
+        background: none;
+        color: $insensitive_fg_color;
       }
     }
   }
@@ -1436,40 +1372,16 @@ spinbutton {
                            background-image,
                            box-shadow;
 
-      &.up { // '+' button
-        &:hover {
-          @extend %button_flat_hover;
-          background-color: $track_color;
-          color: $success_color;
-        }
-        &:active {
-          @extend %button_flat_active;
-          background-color: $track_color;
-          color: $success_color;
-        }
-        &:disabled {
-          @extend %button_flat_disabled;
-          background: none;
-          color: $insensitive_fg_color;
-        }
+      &:hover {
+        @extend %button_flat_hover;
       }
-
-      &.down { // '-' button
-        &:hover {
-          @extend %button_flat_hover;
-          background-color: $track_color;
-          color: $error_color;
-        }
-        &:active {
-          @extend %button_flat_active;
-          background-color: $track_color;
-          color: $error_color;
-        }
-        &:disabled {
-          @extend %button_flat_disabled;
-          background: none;
-          color: $insensitive_fg_color;
-        }
+      &:active {
+        @extend %button_flat_active;
+      }
+      &:disabled {
+        @extend %button_flat_disabled;
+        background: none;
+        color: $insensitive_fg_color;
       }
     }
   }
@@ -1743,8 +1655,8 @@ toolbar {
         min-width: rem($widget_size, $sw: 1.0);
         min-height: rem($widget_size, $sw: 1.0);
         padding: 0;
-        border-radius: 100px;
-        -gtk-outline-radius: 100px;
+        border-radius: 0px;
+        -gtk-outline-radius: 0px;
       }
 
       &.text-button {
@@ -1761,8 +1673,8 @@ toolbar {
         box-shadow: none;
         &:hover { background-color: transparent; }
         &:not(:checked) {
-          border-radius: 100px;
-          -gtk-outline-radius: 100px;
+          border-radius: 0px;
+          -gtk-outline-radius: 0px;
         }
       }
 
@@ -1770,8 +1682,8 @@ toolbar {
         min-width: rem($widget_size, $sw: 1.0);
         min-height: rem($widget_size, $sw: 1.0);
         padding: 0;
-        border-radius: 100px;
-        -gtk-outline-radius: 100px;
+        border-radius: 0px;
+        -gtk-outline-radius: 0px;
       }
     }
 
@@ -1943,8 +1855,8 @@ searchbar,
     min-height: $icon_size;
     margin: 1px 0; // concern other linked widgets
     padding: rem(10.7px);
-    border-radius: 100px;
-    -gtk-outline-radius: 100px;
+    border-radius: 0px;
+    -gtk-outline-radius: 0px;
   }
 }
 
@@ -1959,8 +1871,8 @@ actionbar {
   box:not(.linked) > button.toggle,
   .linked > button.image-button {
     @extend %button_flat_normal;
-    border-radius: 100px;
-    -gtk-outline-radius: 100px;
+    border-radius: 0px;
+    -gtk-outline-radius: 0px;
     border-image: -gtk-gradient(radial,
                                 center bottom, 0,
                                 center bottom, 0.001,
@@ -2106,8 +2018,8 @@ headerbar {
 
   // force to draw circle flat buttons as default
   button:not(.suggested-action):not(.destructive-action) {
-    border-radius: 100px;
-    -gtk-outline-radius: 100px;
+    border-radius: 0px;
+    -gtk-outline-radius: 0px;
 
     &.text-button {
       border-radius: 2px;
@@ -2401,8 +2313,8 @@ headerbar {
       min-height: $titlebutton_small;
       margin: 3px 0 2px; // concern top-edge border
       padding: 0;
-      border-radius: 100px;
-      -gtk-outline-radius: 100px;
+      border-radius: 0px;
+      -gtk-outline-radius: 0px;
       color: $inverted_secondary_fg_color;
       &:hover,
       &:active { color: $inverted_fg_color; }
@@ -2528,8 +2440,8 @@ headerbar {
     }
 
     button:not(.suggested-action):not(.destructive-action) {
-      border-radius: 100px;
-      -gtk-outline-radius: 100px;
+      border-radius: 0px;
+      -gtk-outline-radius: 0px;
       color: $secondary_selected_fg_color;
       &:hover,
       &:active,
@@ -2548,8 +2460,8 @@ headerbar {
         label { margin: rem(-2px) 0; }
 
         &.image-button {
-          border-radius: 100px;
-          -gtk-outline-radius: 100px;
+          border-radius: 0px;
+          -gtk-outline-radius: 0px;
         }
       }
     }
@@ -3617,8 +3529,8 @@ notebook {
         &,
         &.image-button,
         &.small-button {
-          border-radius: 100px;
-          -gtk-outline-radius: 100px;
+          border-radius: 0px;
+          -gtk-outline-radius: 0px;
         }
       }
     }
@@ -3991,57 +3903,6 @@ switch {
 //  * Check and Radio items *
 //  *************************/
 
-@keyframes check_radio_hover {
-  from {
-    background-image: -gtk-gradient(radial,
-                                    center center, 0,
-                                    center center, 0.001,
-                                    to($track_color),
-                                    to(transparent));
-  }
-  to {
-    background-image: -gtk-gradient(radial,
-                                    center center, 0,
-                                    center center, 0.5,
-                                    to($track_color),
-                                    to(transparent));
-  }
-}
-
-@keyframes check_radio_active {
-  from {
-    background-image: -gtk-gradient(radial,
-                                    center center, 0,
-                                    center center, 0.001,
-                                    to(gtkopacity($selected_bg_color, 0.12)),
-                                    to(transparent));
-  }
-  to {
-    background-image: -gtk-gradient(radial,
-                                    center center, 0,
-                                    center center, 0.5,
-                                    to(gtkopacity($selected_bg_color, 0.12)),
-                                    to(transparent));
-  }
-}
-
-@keyframes check_radio_active_reverse {
-  from {
-    background-image: -gtk-gradient(radial,
-                                    center center, 0,
-                                    center center, 0.5,
-                                    to(gtkopacity($selected_bg_color, 0.25)),
-                                    to(transparent));
-  }
-  to {
-    background-image: -gtk-gradient(radial,
-                                    center center, 0,
-                                    center center, 0.001,
-                                    to(gtkopacity($selected_bg_color, 0)),
-                                    to(transparent));
-  }
-}
-
 // draw regular check and radio items using our PNG assets
 // all assets are rendered from assets.svg. never add pngs directly
 
@@ -4211,18 +4072,6 @@ check {
   .background:not(#MozillaGtkWidget) & {
     margin: rem(-10px, $sw: 1.0) rem(-3.3px, $sw: 1.0);
     padding: rem(10px, $sw: 1.0);
-  }
-
-  &:hover {
-    animation: check_radio_hover 0.2s $slope_quick forwards;
-  }
-  &:active {
-    transition-duration: 0.2s;
-    animation: check_radio_active_reverse 0.2s $slope_quick forwards;
-  }
-  &:hover:checked,
-  &:hover:indeterminate {
-    animation: check_radio_active 0.2s $slope_quick forwards;
   }
 
   .background:not(#MozillaGtkWidget) menuitem & {
@@ -5791,23 +5640,6 @@ colorchooser .popover.osd {
   rubberband { @extend rubberband; }
 }
 
-@keyframes volume_hover {
-  from {
-    background-image: -gtk-gradient(radial,
-                                    center center, 0,
-                                    center center, 0.001,
-                                    to(gtkalpha(currentColor, 0)),
-                                    to(transparent));
-  }
-  to {
-    background-image: -gtk-gradient(radial,
-                                    center center, 0,
-                                    center center, 0.5,
-                                    to($track_color),
-                                    to(transparent));
-  }
-}
-
 .scale-popup {
   .osd & { @extend %osd; }
 
@@ -5816,70 +5648,36 @@ colorchooser .popover.osd {
 
   .osd & .vertical button,
   .vertical button { // +/- buttons on GtkVolumeButton popup
-    border-radius: 100px;
-    -gtk-outline-radius: 100px;
+    border-radius: 0px;
+    -gtk-outline-radius: 0px;
     background-color: transparent;
     color: $secondary_fg_color;
 
-    &:first-child { // '+' button
+    &:first-child,
+    &:last-child {
       &:hover {
         @extend %button_flat_hover;
-        background: none;
-        color: $success_color;
-        animation: volume_hover 0.2s linear forwards;
       }
       &:disabled {
         @extend %button_flat_disabled;
-        background: none;
-        color: gtkopacity($success_color, 0.4);
-      }
-    }
-    &:last-child { // '-' button
-      &:hover {
-        @extend %button_flat_hover;
-        background: none;
-        color: $error_color;
-        animation: volume_hover 0.2s linear forwards;
-      }
-      &:disabled {
-        @extend %button_flat_disabled;
-        background: none;
-        color: gtkopacity($error_color, 0.4);
       }
     }
   }
 
   .osd & button,
   button {
-    border-radius: 100px;
-    -gtk-outline-radius: 100px;
+    border-radius: 0px;
+    -gtk-outline-radius: 0px;
     background-color: transparent;
     color: $secondary_fg_color;
 
-    &:first-child { // '-' button
+    &:first-child,
+    &:last-child {
       &:hover {
         @extend %button_flat_hover;
-        background: none;
-        color: $error_color;
-        animation: spin_hover 0.2s linear forwards;
       }
       &:disabled {
         @extend %button_flat_disabled;
-        background: none;
-        color: gtkopacity($error_color, 0.4);
-      }
-    }
-    &:last-child { // '+' button
-      &:hover {
-        @extend %button_flat_hover;
-        background: none;
-        color: $success_color;
-        animation: spin_hover 0.2s linear forwards;
-      }
-      &:disabled {
-        @extend %button_flat_disabled;
-        background: none;
-        color: gtkopacity($success_color, 0.4);
       }
     }
   }
@@ -5893,8 +5691,8 @@ button.flat.scale { // standalone Speaker/Mic buttons
   min-width: $icon_size;
   min-height: $icon_size;
   padding: rem(10.7px);
-  border-radius: 100px;
-  -gtk-outline-radius: 100px;
+  border-radius: 0px;
+  -gtk-outline-radius: 0px;
 }
 
 %fb_child_spacing {
@@ -6064,8 +5862,8 @@ decoration {
     padding: if($ref_weight < 1.0,
              rem(($widget_size - $icon_size * 1.5 - 2px) / 2),
              rem(($widget_size - $icon_size * 1.5) / 2));
-    border-radius: 100px;
-    -gtk-outline-radius: 100px;
+    border-radius: 0px;
+    -gtk-outline-radius: 0px;
 
     &.icon,
     &.appmenu { // appmenu buttons
@@ -6568,8 +6366,8 @@ popover.emoji-picker button.emoji-section.flat {
   min-width: rem($widget_size - 4px, $sw: 1.0);
   margin: 2px 0 0;
   padding: 0;
-  border-radius: 100px;
-  -gtk-outline-radius: 100px;
+  border-radius: 0px;
+  -gtk-outline-radius: 0px;
 
   label {
     padding: 0; // unset padding

@@ -11,11 +11,11 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="24"
    height="24"
-   viewBox="0 0 24 24.000001"
+   viewBox="0 0 24 24"
    id="svg4747"
    version="1.1"
    inkscape:version="0.92+devel (unknown)"
-   sodipodi:docname="max_button_unmaximize_prelight.svg">
+   sodipodi:docname="button_unmaximize_prelight.svg">
   <defs
      id="defs4749" />
   <sodipodi:namedview
@@ -50,7 +50,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
       </cc:Work>
@@ -74,18 +74,18 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-1028.3622)">
-    <circle
-       style="opacity:1;fill:#cfd8dc;fill-opacity:0.12000002;fill-rule:evenodd;stroke:none;stroke-width:9.60499954;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:478.43673706;stroke-opacity:0.75"
+     id="layer1">
+    <rect
+       style="opacity:1;fill:#cfd8dc;fill-opacity:0.12;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.75"
        id="path5326"
-       cx="12.000001"
-       cy="1040.3622"
-       r="10.000001" />
+       x="2"
+       y="2"
+       width="20"
+       height="20" />
     <path
        id="rect4513"
        style="opacity:1;fill:#cfd8dc;fill-opacity:1;fill-rule:evenodd"
-       d="m 10,1035.3622 v 7 h 7 v -7 z m 2,2 h 3 v 3 h -3 z m -3,6 h 5 v 2 H 9 Z m -2,-5 h 2 v 7 H 7 Z"
+       d="m 10,7 v 7 h 7 v -7 z m 2,2 h 3 v 3 h -3 z m -3,6 h 5 v 2 H 9 Z m -2,-5 h 2 v 7 H 7 Z"
        inkscape:connector-curvature="0" />
   </g>
 </svg>

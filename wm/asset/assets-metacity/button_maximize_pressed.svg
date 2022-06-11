@@ -11,7 +11,7 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="24"
    height="24"
-   viewBox="0 0 24 24.000001"
+   viewBox="0 0 24 24"
    id="svg4747"
    version="1.1"
    inkscape:version="0.92+devel (unknown)"
@@ -74,17 +74,17 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-1028.3622)">
-    <circle
-       style="opacity:1;fill:#cfd8dc;fill-opacity:0.25;fill-rule:evenodd;stroke:none;stroke-width:9.60499954;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:478.43673706;stroke-opacity:0.75"
+     id="layer1">
+    <rect
+       style="opacity:1;fill:#cfd8dc;fill-opacity:0.25;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.75"
        id="path5326"
-       cx="12.000001"
-       cy="1040.3622"
-       r="10.000001" />
+       x="2"
+       y="2"
+       width="20"
+       height="20" />
     <path
        style="opacity:1;fill:#cfd8dc;fill-opacity:1;fill-rule:evenodd"
-       d="m 7,1035.3622 v 10 h 10 v -10 z m 2,2 h 6 v 6 H 9 Z"
+       d="m 7,7 v 10 h 10 v -10 z m 2,2 h 6 v 6 H 9 Z"
        id="rect821"
        inkscape:connector-curvature="0" />
   </g>

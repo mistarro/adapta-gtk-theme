@@ -11,7 +11,7 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="24"
    height="24"
-   viewBox="0 0 24 24.000001"
+   viewBox="0 0 24 24"
    id="svg4747"
    version="1.1"
    inkscape:version="0.92+devel (unknown)"
@@ -25,7 +25,7 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="10.919749"
+     inkscape:zoom="15.442857"
      inkscape:cx="0.63479131"
      inkscape:cy="17.953176"
      inkscape:document-units="px"
@@ -70,17 +70,10 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-1028.3622)">
-    <circle
-       style="opacity:1;fill:#cfd8dc;fill-opacity:0.1;fill-rule:evenodd;stroke:none;stroke-width:9.60499954;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:478.43673706;stroke-opacity:0.75"
-       id="path5326"
-       cx="-14.999999"
-       cy="1040.3622"
-       r="10.000001" />
+     id="layer1">
     <path
        style="fill:#cfd8dc;fill-opacity:0.87;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 6.999999,1038.3622 10,0 -5,5 z"
+       d="m 7,10 10,0 -5,5 z"
        id="path4347"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc" />

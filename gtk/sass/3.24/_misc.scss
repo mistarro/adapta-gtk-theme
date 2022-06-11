@@ -837,8 +837,8 @@ window.background > box.vertical > paned.horizontal > frame {
 
 %composer_headerbar {
   > .linked.raised > button.image-button { // 'trash/save' button
-    border-radius: 100px;
-    -gtk-outline-radius: 100px;
+    border-radius: 0px;
+    -gtk-outline-radius: 0px;
   }
 
   > button.flat:not(.image-button) { // 'Reply to' text-button
@@ -904,8 +904,8 @@ notebook > stack > box.vertical > paned.vertical > overlay {
 .background:not(.csd) > box.vertical > headerbar {
   // conflicts with .primary-toolbar styling?
   .linked > button.image-button { // = 'back/forward' button
-    border-radius: 100px;
-    -gtk-outline-radius: 100px;
+    border-radius: 0px;
+    -gtk-outline-radius: 0px;
   }
 }
 
@@ -954,8 +954,8 @@ popover.background:not(.emoji-picker) > box.vertical > stack > box.vertical {
         min-width: $icon_size;
         min-height: $icon_size;
         padding: rem(4px); // Same as of image.sidebar-icon
-        border-radius: 100px;
-        -gtk-outline-radius: 100px;
+        border-radius: 0px;
+        -gtk-outline-radius: 0px;
       }
     }
   }
@@ -1119,8 +1119,8 @@ window.background > box.vertical > box.vertical > toolbar {
     min-width: $widget_size;
     min-height: $widget_size;
     padding: 0;
-    border-radius: 100px;
-    -gtk-outline-radius: 100px;
+    border-radius: 0px;
+    -gtk-outline-radius: 0px;
   }
 }
 
@@ -1138,8 +1138,8 @@ window.background > box.vertical > toolbar.primary-toolbar {
         min-height: $min_circle * 2.0;
         margin: 0;
         padding: 0;
-        border-radius: 100px;
-        -gtk-outline-radius: 100px;
+        border-radius: 0px;
+        -gtk-outline-radius: 0px;
 
         > widget > box > image { padding: 0; }
       }
@@ -1149,8 +1149,8 @@ window.background > box.vertical > toolbar.primary-toolbar {
       min-width: $min_circle * 1.5;
       min-height: $min_circle * 1.5;
       padding: 0;
-      border-radius: 100px;
-      -gtk-outline-radius: 100px;
+      border-radius: 0px;
+      -gtk-outline-radius: 0px;
     }
 
     button.flat.scale { // 'volume'
@@ -1166,8 +1166,8 @@ window.background > box.vertical > toolbar.primary-toolbar {
       min-width: $min_circle * 1.5;
       min-height: $min_circle * 1.5;
       padding: 0;
-      border-radius: 100px;
-      -gtk-outline-radius: 100px;
+      border-radius: 0px;
+      -gtk-outline-radius: 0px;
 
       > widget > box > image { padding: 0; }
     }
@@ -1177,8 +1177,8 @@ window.background > box.vertical > toolbar.primary-toolbar {
         min-width: $min_circle * 1.5;
         min-height: $min_circle * 1.5;
         padding: 0;
-        border-radius: 100px;
-        -gtk-outline-radius: 100px;
+        border-radius: 0px;
+        -gtk-outline-radius: 0px;
       }
     }
   }
@@ -1275,8 +1275,8 @@ window.background {
       }
 
       &.suggested-action {  // '=' button
-        border-radius: 100px;
-        -gtk-outline-radius: 100px;
+        border-radius: 0px;
+        -gtk-outline-radius: 0px;
 
         &:hover {
           background-color: mix($selected_fg_color, $suggested_color, 10%);
@@ -1491,8 +1491,8 @@ overlay > box.vertical > paned.horizontal > box.vertical {
       min-width: $icon_size;
       margin: rem(2.7px);
       padding: rem(5.3px);
-      border-radius: 100px;
-      -gtk-outline-radius: 100px;
+      border-radius: 0px;
+      -gtk-outline-radius: 0px;
     }
   }
 }
@@ -2228,8 +2228,8 @@ window.background:not(.csd) { // preferences window (>= 3.28)
         min-width: $icon_size;
         min-height: $icon_size;
         padding: rem(6.7px);
-        border-radius: 100px;
-        -gtk-outline-radius: 100px;
+        border-radius: 0px;
+        -gtk-outline-radius: 0px;
       }
     }
 
@@ -2279,8 +2279,8 @@ frame#weather-page-content-view {
     min-width: $icon_size;
     min-height: $icon_size;
     padding: rem($icon_size);
-    border-radius: 100px;
-    -gtk-outline-radius: 100px;
+    border-radius: 0px;
+    -gtk-outline-radius: 0px;
     background-color: transparent;
     &:hover { @extend %button_flat_hover; }
     &:active { @extend %button_flat_active; }

@@ -714,8 +714,8 @@ $switcher_height: $widget_size - if($ref_weight < 1.0, 10.7px, 5.3px);
     min-width: $icon_size;
     min-height: $icon_size;
     padding: rem(8px);
-    border-radius: 100px;
-    -gtk-outline-radius: 100px;
+    border-radius: 0px;
+    -gtk-outline-radius: 0px;
     color: $tertiary_fg_color;
     &:hover,
     &:active { color: $fg_color; }
@@ -892,19 +892,10 @@ window.sound-popover.background box.horizontal {
     margin: 0;
     padding: 0;
 
-    &:first-child { // '-' button
+    &:first-child,
+    &:last-child {
       &:hover {
         background: none;
-        color: $error_color;
-        animation: volume_hover 0.2s linear forwards;
-      }
-    }
-
-    &:last-child { // '+' button
-      &:hover {
-        background: none;
-        color: $success_color;
-        animation: volume_hover 0.2s linear forwards;
       }
     }
   }
@@ -1914,14 +1905,14 @@ window.background.lightdm {
   button {
     &:not(.option-button):not(.toggle-button) {
       padding: rem(6.7px, $sw: 1.0);
-      border-radius: 100px;
-      -gtk-outline-radius: 100px;
+      border-radius: 0px;
+      -gtk-outline-radius: 0px;
     }
 
     &.flat.option-button { // session logo button
       padding: rem(6.7px, $sw: 1.0);
-      border-radius: 100px;
-      -gtk-outline-radius: 100px;
+      border-radius: 0px;
+      -gtk-outline-radius: 0px;
       color: $inverted_fg_color;
 
       image { opacity: 0.87; }
