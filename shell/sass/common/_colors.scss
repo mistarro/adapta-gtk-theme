@@ -15,7 +15,7 @@
 // Foreground colors
 //
 
-$fg_color: if($nokto == false, #263238, #CFD8DC);
+$fg_color: if($nokto == false, #383838, #E0E0E0);
 $secondary_fg_color: shellopacity($fg_color, 0.87);
 $tertiary_fg_color: shellopacity($fg_color, 0.54);
 $insensitive_fg_color: shellopacity($fg_color, 0.28);
@@ -29,7 +29,7 @@ $secondary_selected_fg_color: shellopacity($selected_fg_color, 0.87);
 // OSD Foreground colors
 //
 
-$osd_fg_color: #CFD8DC;
+$osd_fg_color: #E0E0E0;
 $osd_secondary_fg_color: shellopacity($osd_fg_color, 0.87);
 $osd_tertiary_fg_color: shellopacity($osd_fg_color, 0.54);
 
@@ -42,15 +42,15 @@ $insensitive_osd_secondary_fg_color:
 // Background colors
 //
 
-$bg_color: if($nokto == false, mix(#FFFFFF, #ECEFF1, 75%),
-                               #263238);
+$bg_color: if($nokto == false, mix(#FFFFFF, #F0F0F0, 75%),
+                               #383838);
 $base_color: if($nokto == false, #FFFFFF,
-                                 mix(#263238, #37474F, 85%));
+                                 mix(#383838, #505050, 85%));
 $secondary_base_color: mix($base_color, $bg_color, 50%);
-$secondary_dark_color: if($nokto == false, mix(#FFFFFF, #ECEFF1, 60%),
-                                           mix(#263238, #000000, 95%));
+$secondary_dark_color: if($nokto == false, mix(#FFFFFF, #F0F0F0, 60%),
+                                           mix(#383838, #000000, 95%));
 $light_color: if($nokto == false, $base_color,
-                                  mix(#263238, #37474F, 50%));
+                                  mix(#383838, #505050, 50%));
 
 $fill_color: shellopacity($fg_color, 0.25);
 $semi_fill_color: shellopacity($fg_color, 0.12);
@@ -68,7 +68,7 @@ $insensitive_outline_fill_color: shellopacity($outline_fill_color, 0.28);
 // OSD Background colors
 //
 
-$osd_bg_color: mix(#263238, #000000, 90%);
+$osd_bg_color: mix(#383838, #000000, 90%);
 
 $osd_fill_color: shellopacity($osd_fg_color, 0.25);
 $osd_semi_fill_color: shellopacity($osd_fg_color, 0.12);
@@ -107,7 +107,7 @@ $inverted_secondary_accent_label_color:
 
 $borders_color: if($nokto == false, shellopacity(#000000, 0.09),
                                     shellopacity(#000000, 0.13));
-$solid_light_borders_color: if($nokto == false, #E5E9EC, #212B30);
+$solid_light_borders_color: if($nokto == false, #E8E8E8, #303030);
 $borders_edge: shellopacity(#000000, 0.05);
 $top_hilight: $borders_edge;
 $borders_highlight: shellopacity(#FFFFFF, 0.07);
@@ -137,7 +137,7 @@ $destructive_color: $key_destruction_color;
 // Panel colors
 //
 
-$panel_bg_color: mix(#263238, #000000, 50%);
+$panel_bg_color: mix(#383838, #000000, 50%);
 $panel_transparent_color: shellopacity($panel_bg_color, 0.0);
 $panel_hidden_fill_color: shellopacity($panel_bg_color, 0.01);
 $panel_secondary_fill_color: shellopacity($panel_bg_color, 0.87);

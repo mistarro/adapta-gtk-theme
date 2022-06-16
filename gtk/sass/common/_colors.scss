@@ -28,8 +28,8 @@
 // Foreground colors
 //
 
-$fg_color: if($variant == light, #263238,                       // = BluGry900
-                                 #CFD8DC);                      // = BluGry100
+$fg_color: if($variant == light, #383838,                       // = BluGry900
+                                 #E0E0E0);                      // = BluGry100
 $secondary_fg_color: gtkopacity($fg_color, 0.87);
 $tertiary_fg_color: gtkopacity($fg_color, 0.54);
 
@@ -48,14 +48,14 @@ $insensitive_tertiary_selected_fg_color:
   gtkopacity($tertiary_selected_fg_color, 0.4);
 
 // preview text on empty GtkEntry
-$placeholder_text_color: #78909C;                               // = BluGry400
+$placeholder_text_color: #909090;                               // = BluGry400
 
 
 //
 // Inverted foreground colors
 //
 
-$inverted_fg_color: #CFD8DC;                                    // = BluGry100
+$inverted_fg_color: #E0E0E0;                                    // = BluGry100
 $inverted_secondary_fg_color: gtkopacity($inverted_fg_color, 0.87);
 $inverted_tertiary_fg_color: gtkopacity($inverted_fg_color, 0.54);
 
@@ -63,7 +63,7 @@ $insensitive_inverted_fg_color: gtkopacity($inverted_fg_color, 0.28);
 $insensitive_inverted_secondary_fg_color:
   gtkopacity($inverted_secondary_fg_color, 0.28);
 
-$fixed_fg_color: #263238;                                       // = BluGry900
+$fixed_fg_color: #383838;                                       // = BluGry900
 $secondary_fixed_fg_color: gtkopacity($fixed_fg_color, 0.87);
 $tertiary_fixed_fg_color: gtkopacity($fixed_fg_color, 0.54);
 $insensitive_fixed_fg_color: gtkopacity($fixed_fg_color, 0.28);
@@ -75,32 +75,32 @@ $unfocused_inverted_fg_color: gtkopacity($inverted_fg_color, 0.4);
 // Background colors
 //
 
-$bg_color: if($variant == light, mix(#FFFFFF, #ECEFF1, 75%),    // = #FAFBFC
-                                   #263238);                    // = BluGry900
+$bg_color: if($variant == light, mix(#FFFFFF, #F0F0F0, 75%),    // = #F8F8F8
+                                   #383838);                    // = BluGry900
 $base_color: if($variant == light,
                 #FFFFFF,                                        // = White
-                mix(#263238, #37474F, 85%));                    // = #29353B
+                mix(#383838, #505050, 85%));                    // = #404040
 $secondary_base_color: mix($base_color, $bg_color, 50%);        // = #FDFDFE
-                                                                // = #28343A
+                                                                // = #3C3C3C
 $light_color: if($variant == light,
                  $base_color,                                   // = White
-                 mix(#263238, #37474F, 50%));                   // = #2F3D44
+                 mix(#383838, #505050, 50%));                   // = #484848
 $dark_color: if($variant == light,
-                mix(#ECEFF1, #CFD8DC, 75%),                     // = #E5E9EC
-                mix(#263238, #000000, 90%));                    // = #222D32
+                mix(#F0F0F0, #E0E0E0, 75%),                     // = #E8E8E8
+                mix(#383838, #000000, 90%));                    // = #343434
 $secondary_dark_color: if($variant == light,
-                          mix(#FFFFFF, #ECEFF1, 60%),           // = #F7F9F9
-                          mix(#263238, #000000, 95%));          // = #243035
+                          mix(#FFFFFF, #F0F0F0, 60%),           // = #F7F9F9
+                          mix(#383838, #000000, 95%));          // = #363636
 
 
 //
 // Dark background colors on light variant
 //
 
-$inverted_bg_color: #263238;                                    // = BluGry900
-$inverted_base_color: mix(#263238, #37474F, 85%);               // = #29353B
-$inverted_light_color: mix(#263238, #37474F, 50%);              // = #2F3D44
-$inverted_dark_color: mix(#263238, #000000, 90%);               // = #222D32
+$inverted_bg_color: #383838;                                    // = BluGry900
+$inverted_base_color: mix(#383838, #505050, 85%);               // = #404040
+$inverted_light_color: mix(#383838, #505050, 50%);              // = #484848
+$inverted_dark_color: mix(#383838, #000000, 90%);               // = #343434
 
 
 //
@@ -154,7 +154,7 @@ $outline_track_color: gtkalpha(currentColor, 0.2);
 
 $borders_color: if($variant == light, gtkopacity(#000000, 0.09),
                                       gtkopacity(#000000, 0.13));
-$solid_light_borders_color: if($variant == light, #E5E9EC, #212B30);
+$solid_light_borders_color: if($variant == light, #E8E8E8, #303030);
 $solid_dark_borders_color: mix($inverted_dark_color, #000000, 0.06);
 $top_edge_borders_color: $inverted_base_color;
 $paned_borders_color: if($variant == light, gtkopacity(#000000, 0.05),
@@ -164,7 +164,7 @@ $highlight_color: gtkopacity(#FFFFFF, 0.07);
 $menu_highlight_color:
   if($variant == light,
   $base_color,
-  mix($secondary_base_color, #FFFFFF, 98%));                    // = #2C383E
+  mix($secondary_base_color, #FFFFFF, 98%));                    // = #444444
 
 //
 // Misc colors
@@ -204,5 +204,5 @@ $solid_blue: #2196F3;                                           // = Blue500
 // Solid panel color
 //
 
-$panel_bg_color: mix(#263238, #000000, 50%);                    // = #13191C
+$panel_bg_color: mix(#383838, #000000, 50%);                    // = #202020
 $panel_separator_color: gtkopacity($inverted_fg_color, 0.12 * 0.55);

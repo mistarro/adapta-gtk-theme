@@ -1999,7 +1999,7 @@ actionbar {
 
 .titlebar,
 headerbar {
-  background-color: $inverted_dark_color;
+  background-color: $panel_bg_color;
   background-clip: border-box;
 
   // hide all outlines
